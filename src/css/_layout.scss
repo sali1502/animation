@@ -322,7 +322,7 @@ div {
 #jumpingDot {
     margin-top: 40vh;
     @extend .threedot;
-    animation: jumpingDot 6s 4s infinite alternate both linear;
+    animation: jumpingDot 6s 2s infinite alternate both linear;
 }
 
 /* Media querys */
@@ -415,7 +415,7 @@ div {
     #jumpingDot {
         margin-top: 40vh;
         @extend .threedot;
-        animation: jumpingDot_mobile 6s 4s infinite alternate both linear;
+        animation: jumpingDot_mobile 6s 2s infinite alternate both linear;
     }
 
 }
