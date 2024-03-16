@@ -1,6 +1,6 @@
 @use 'base';
 
-@keyframes colorChange {
+@keyframes colorChangeHover {
 
     0% {
         background-color: base.$light-green;
@@ -20,6 +20,21 @@
 
     20% {
         transform: rotate(0deg);
+    }
+
+    50% {
+        background-color: base.$primary-green;
+    }
+
+    100% {
+        background-color: base.$dark-green;
+    }
+}
+
+@keyframes colorChangeStill {
+
+    0% {
+        background-color: base.$light-green;
     }
 
     50% {

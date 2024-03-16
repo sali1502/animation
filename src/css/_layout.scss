@@ -303,7 +303,7 @@ div {
 
 }
 
-// Element som ändrar färg och rör sig vid hoover
+// Animering - element som ändrar färg
 .backgroundTransition {
     width: 150px;
     height: 50px;
@@ -312,13 +312,26 @@ div {
     margin: 0 auto 0 auto;
     text-align: center;
     padding-top: 2vh;
-
+    animation: colorChangeStill 6s 2s infinite alternate both ease-out;
 }
 
-.backgroundTransition:hover {
-    animation: colorChange 2s 0s infinite both ease-out;
+
+// Animering - element som ändrar färg och rör sig vid hoover
+.backgroundTransitionHover {
+    width: 150px;
+    height: 50px;
+    background-color: base.$light-green;
+    border-radius: 50;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding-top: 2vh;
 }
 
+.backgroundTransitionHover:hover {
+    animation: colorChangeHover 2s 0s infinite both ease-out;
+}
+
+// Animering - studsande prick
 #jumpingDot {
     margin-top: 40vh;
     @extend .threedot;
@@ -412,6 +425,7 @@ div {
         text-align: center;
     }
 
+    // Animering - studsande prick liten skärm
     #jumpingDot {
         margin-top: 40vh;
         @extend .threedot;
