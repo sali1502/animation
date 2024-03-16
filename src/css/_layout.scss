@@ -16,7 +16,7 @@
     padding: 0px;
     background-color: base.$white;
     padding: 0px;
-    width: 80%;
+    width: 100%;
     max-width: 1512px;
     margin: auto;
 }
@@ -316,13 +316,13 @@ div {
 }
 
 .backgroundTransition:hover {
-    animation:  colorChange 2s 0s infinite both ease-out;
+    animation: colorChange 2s 0s infinite both ease-out;
 }
 
 #jumpingDot {
     margin-top: 40vh;
     @extend .threedot;
-    animation: jumpingDot 4s 2s infinite alternate linear;
+    animation: jumpingDot 6s 4s infinite alternate both linear;
 }
 
 /* Media querys */
@@ -393,8 +393,10 @@ div {
 @media only screen and (max-width: 800px) {
 
     .text-container {
+        display: block;
+        justify-content: center;
         margin: 0 auto 0 auto;
-        text-align: left;
+        text-align: center;
         padding-left: 10vw;
         padding-right: 10vw;
         font-size: 1em;
@@ -408,6 +410,12 @@ div {
         justify-content: center;
         margin: 0 auto 0 auto;
         text-align: center;
+    }
+
+    #jumpingDot {
+        margin-top: 40vh;
+        @extend .threedot;
+        animation: jumpingDot_mobile 6s 4s infinite alternate both linear;
     }
 
 }
